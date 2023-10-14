@@ -23,7 +23,7 @@ PICS = (environ.get('PICS', 'https://telegra.ph/file/7e56d907542396289fee4.jpg h
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1252952787').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001942057531').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001847880984').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1252952787').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -60,7 +60,7 @@ LAZY_MODE = bool(environ.get("LAZY_MODE"))
 #Add user id of the user in this field those who you want to be Authentic user for file renaming features
 lazy_renamers = [int(lazrenamers) if id_pattern.search(lazrenamers) else lazrenamers for lazrenamers in environ.get('LAZY_RENAMERS', '').split()]
 LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else []
-REQ_CHANNEL = int(environ.get('REQ_CHANNEL'))
+REQ_CHANNEL = int(environ.get('REQ_CHANNEL=-1001729905355'))
 
 #ai
 OPENAI_API = environ.get("OPENAI_API","")
