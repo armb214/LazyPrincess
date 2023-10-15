@@ -31,9 +31,12 @@ from aiohttp import web
 from plugins import web_server
 
 import asyncio
-from pyrogram import Client, idle
-from util.keepalive import ping_server
-from lazybot.clients import initialize_clients
+from pyrogram import Client
+LazyPrincessBot = Client("your_bot_session_name")
+async def handle_messages(client, message):
+    pass
+    if __name__ == "__main__":
+    LazyPrincessBot.start()
 
 ppath = "plugins/*.py"
 files = glob.glob(ppath)
